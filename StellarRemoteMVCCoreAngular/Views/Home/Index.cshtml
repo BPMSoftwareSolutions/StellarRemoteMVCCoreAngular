@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AngularClient</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body ng-controller="TestController">
+    <div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="~/js/TestController.js"></script>
+        <input type="text" ng-model="inputdata" />
+        Output: {{inputdata}}
+
+        This is from my controller: {{testvalue}}
+    </div>
+
+    <app-root></app-root>
+    <script src="/dist/AngularClient/runtime.js" defer></script>
+    <script src="/dist/AngularClient/polyfills.js" defer></script>
+    <script src="/dist/AngularClient/styles.js" defer></script>
+    <script src="/dist/AngularClient/vendor.js" defer></script>
+    <script src="/dist/AngularClient/main.js" defer></script>
+</body>
+</html>
+
